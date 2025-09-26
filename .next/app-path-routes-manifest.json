@@ -1,0 +1,12 @@
+{
+  "/_not-found/page": "/_not-found",
+  "/api/login/route": "/api/login",
+  "/api/logout/route": "/api/logout",
+  "/_global-error/page": "/_global-error",
+  "/cover-editor/page": "/cover-editor",
+  "/auth/page": "/auth",
+  "/library/page": "/library",
+  "/editor/page": "/editor",
+  "/export/page": "/export",
+  "/page": "/"
+}

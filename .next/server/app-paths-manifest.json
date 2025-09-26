@@ -1,5 +1,12 @@
 {
-  "/page": "app/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/login/route": "app/api/login/route.js",
+  "/api/logout/route": "app/api/logout/route.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/cover-editor/page": "app/cover-editor/page.js",
   "/auth/page": "app/auth/page.js",
-  "/library/page": "app/library/page.js"
+  "/library/page": "app/library/page.js",
+  "/editor/page": "app/editor/page.js",
+  "/export/page": "app/export/page.js",
+  "/page": "app/page.js"
 }
