@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-matte-black: #0D0D0F;
+  --color-ghost-white: #EAEAEA;
+  --color-neon-turquoise: #0FFFC0;
+  --color-violet-blue: #6C63FF;
+  --color-soft-amber: #FFB347;
+}
+
+body {
+  background: var(--color-matte-black);
+  color: var(--color-ghost-white);
+  font-family: var(--font-inter), var(--font-sora), system-ui, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-header), 'Space Grotesk', system-ui, sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.glass-card {
+  @apply bg-white/5 backdrop-blur-glass rounded-2xl border border-white/10 shadow-glass;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(20, 20, 30, 0.55);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.neon-glow {
+  box-shadow: 0 0 8px 2px var(--color-neon-turquoise), 0 0 24px 4px var(--color-violet-blue);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #14141E;
+}
+::-webkit-scrollbar-thumb {
+  background: #23232e;
+  border-radius: 8px;
+}
+
+input, textarea, select {
+  @apply bg-transparent border border-white/20 rounded-lg px-4 py-2 text-ghost-white placeholder:text-white/40 outline-none transition-all duration-200;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--color-neon-turquoise);
+  box-shadow: 0 0 0 2px var(--color-neon-turquoise);
+}
+
+a {
+  @apply text-violet-blue hover:underline;
+}
+
+button {
+  @apply transition-all duration-150 focus:outline-none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-neon-turquoise);
+  outline-offset: 2px;
+}
